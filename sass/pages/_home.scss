@@ -1,0 +1,123 @@
+.header{
+
+    background-image: url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+    background-size: cover;
+
+    &__box{
+    text-align: center; 
+    background-image: linear-gradient(to right bottom, rgba($c-black-1,.4),rgba($c-black-2,.3));
+    @include respond(phone) {
+        padding: 2rem;
+    }
+
+    }
+    &__text{
+    font-size: 2rem;
+    color: $c-white;
+    margin: 2rem 0;
+    }
+
+}
+
+.sect__about{
+    background-color:$c-white;
+    padding: 7rem 0;
+    @include respond(phone) {
+        padding: 7rem 2rem;
+    }
+}
+.about__box{
+    padding: 3rem 3rem;
+    &--1{
+    background-color:$c-white;
+
+    }
+    &--2{
+        background-color:$c-black-1;
+    }
+    &--3{
+        background-color:$c-pink-1;
+    }
+    &__btn-container{
+        margin: 0 2rem;
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.li__about{
+    margin-top:1rem;
+}
+.front-end__photo{
+    width: 90%;
+    margin-bottom: 3rem;
+    &--content{
+        width: 100%;
+    }
+}
+
+.footer{
+    background-image: linear-gradient(to right bottom, rgba($c-white,.6),rgba($c-brown-1,.4)),
+    url(../img/contact.jpg);
+    background-size: cover;
+}
+
+.contact__img{
+    width: 100%;
+}
+.contact--card{
+    padding: 2rem 2rem;
+    margin: 3rem 3rem;
+    //box-shadow: 0 3rem 6rem rgba($c-black-1,.5);
+    //background-color: rgba($c-white,1);
+    &__photo-box{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        }
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    &:hover{
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+.contact--card__icon{
+    &--box{
+        font-size: 2.5rem;
+        color: $c-black-1;
+        margin: 1rem;
+    }
+    &--link{
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.fa {
+
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-github, .fa-facebook,.fa-linkedin, .fa-skype, .fa-envelope{
+    color: $c-black-2;
+}
+
+
+  
